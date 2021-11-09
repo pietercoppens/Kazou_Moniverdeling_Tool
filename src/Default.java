@@ -5,8 +5,5 @@ public class Default {
         new popUp("Welkom");
         GUI UI = new GUI();
 
-
-
-
     }
 }

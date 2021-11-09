@@ -17,7 +17,7 @@ public class popUp {
                 JOptionPane.showMessageDialog(f,"Vraag","Alert",JOptionPane.QUESTION_MESSAGE);
                 break;
             case "Error":
-                JOptionPane.showMessageDialog(f,"Error","Alert",JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(f,"Het bestandspad is ongeldig.","Error",JOptionPane.ERROR_MESSAGE);
                 break;
             case "Mededeling":
                 JOptionPane.showMessageDialog(f,"Mededeling","Alert",JOptionPane.PLAIN_MESSAGE);

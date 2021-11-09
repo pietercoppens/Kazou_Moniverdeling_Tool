@@ -1,68 +1,446 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI">
-  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="18" y="25" width="558" height="420"/>
+      <xy x="20" y="20" width="581" height="400"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
-      <grid id="d160" binding="invoer" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-        <margin top="0" left="0" bottom="0" right="0"/>
+      <tabbedpane id="de200" binding="Menu">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
         </constraints>
         <properties/>
         <border type="none"/>
         <children>
-          <component id="9201" class="javax.swing.JLabel" binding="padVakanties">
+          <grid id="26680" binding="Home" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <tabbedpane title="Home"/>
             </constraints>
-            <properties>
-              <text value=" Bestandspad vakanties: "/>
-            </properties>
-          </component>
-          <component id="e13f6" class="javax.swing.JTextField" binding="invoerBestandspadVakanties">
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="79af8" class="javax.swing.JLabel" binding="Welkom">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Algemene Welkom"/>
+                </properties>
+              </component>
+              <component id="4a0c2" class="javax.swing.JList" binding="list1" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="219" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="Vrijwilligers"/>
+                    <item value="Vakanties"/>
+                    <item value="Verdeling"/>
+                  </model>
+                </properties>
+              </component>
+              <vspacer id="9c013">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="8202a">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <grid id="54da2" binding="Protocol" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="-1"/>
+              <tabbedpane title="Protocol"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="950cc" binding="Input" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Input"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="f9d04" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="301" height="139"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="81832" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="A"/>
+                        <item value="B"/>
+                        <item value="C"/>
+                        <item value="B"/>
+                        <item value="E"/>
+                        <item value="F"/>
+                        <item value="G"/>
+                        <item value="H"/>
+                        <item value="I"/>
+                        <item value="J"/>
+                        <item value="K"/>
+                        <item value="L"/>
+                        <item value="M"/>
+                        <item value="N"/>
+                        <item value="O"/>
+                        <item value="P"/>
+                        <item value="Q"/>
+                        <item value="R"/>
+                        <item value="S"/>
+                        <item value="T"/>
+                        <item value="U"/>
+                        <item value="V"/>
+                        <item value="W"/>
+                        <item value="X"/>
+                        <item value="Y"/>
+                        <item value="Z"/>
+                        <item value="AA"/>
+                        <item value="AB"/>
+                        <item value="AC"/>
+                        <item value="AD"/>
+                        <item value="AE"/>
+                        <item value="AF"/>
+                        <item value="AG"/>
+                        <item value="AH"/>
+                        <item value="AI"/>
+                        <item value="AJ"/>
+                        <item value="AK"/>
+                        <item value="AL"/>
+                        <item value="AM"/>
+                        <item value="AN"/>
+                        <item value="AO"/>
+                        <item value="AP"/>
+                        <item value="AQ"/>
+                        <item value="AR"/>
+                        <item value="AS"/>
+                        <item value="AT"/>
+                        <item value="AU"/>
+                        <item value="AV"/>
+                        <item value="AW"/>
+                      </model>
+                    </properties>
+                  </component>
+                  <component id="74101" class="javax.swing.JComboBox" binding="comboBox2" default-binding="true">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="A"/>
+                        <item value="B"/>
+                        <item value="C"/>
+                        <item value="B"/>
+                        <item value="E"/>
+                        <item value="F"/>
+                        <item value="G"/>
+                        <item value="H"/>
+                        <item value="I"/>
+                        <item value="J"/>
+                        <item value="K"/>
+                        <item value="L"/>
+                        <item value="M"/>
+                        <item value="N"/>
+                        <item value="O"/>
+                        <item value="P"/>
+                        <item value="Q"/>
+                        <item value="R"/>
+                        <item value="S"/>
+                        <item value="T"/>
+                        <item value="U"/>
+                        <item value="V"/>
+                        <item value="W"/>
+                        <item value="X"/>
+                        <item value="Y"/>
+                        <item value="Z"/>
+                        <item value="AA"/>
+                        <item value="AB"/>
+                        <item value="AC"/>
+                        <item value="AD"/>
+                        <item value="AE"/>
+                        <item value="AF"/>
+                        <item value="AG"/>
+                        <item value="AH"/>
+                        <item value="AI"/>
+                        <item value="AJ"/>
+                        <item value="AK"/>
+                        <item value="AL"/>
+                        <item value="AM"/>
+                        <item value="AN"/>
+                        <item value="AO"/>
+                        <item value="AP"/>
+                        <item value="AQ"/>
+                        <item value="AR"/>
+                        <item value="AS"/>
+                        <item value="AT"/>
+                        <item value="AU"/>
+                        <item value="AV"/>
+                        <item value="AW"/>
+                      </model>
+                    </properties>
+                  </component>
+                  <component id="299d3" class="javax.swing.JComboBox" binding="comboBox3" default-binding="true">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="A"/>
+                        <item value="B"/>
+                        <item value="C"/>
+                        <item value="B"/>
+                        <item value="E"/>
+                        <item value="F"/>
+                        <item value="G"/>
+                        <item value="H"/>
+                        <item value="I"/>
+                        <item value="J"/>
+                        <item value="K"/>
+                        <item value="L"/>
+                        <item value="M"/>
+                        <item value="N"/>
+                        <item value="O"/>
+                        <item value="P"/>
+                        <item value="Q"/>
+                        <item value="R"/>
+                        <item value="S"/>
+                        <item value="T"/>
+                        <item value="U"/>
+                        <item value="V"/>
+                        <item value="W"/>
+                        <item value="X"/>
+                        <item value="Y"/>
+                        <item value="Z"/>
+                        <item value="AA"/>
+                        <item value="AB"/>
+                        <item value="AC"/>
+                        <item value="AD"/>
+                        <item value="AE"/>
+                        <item value="AF"/>
+                        <item value="AG"/>
+                        <item value="AH"/>
+                        <item value="AI"/>
+                        <item value="AJ"/>
+                        <item value="AK"/>
+                        <item value="AL"/>
+                        <item value="AM"/>
+                        <item value="AN"/>
+                        <item value="AO"/>
+                        <item value="AP"/>
+                        <item value="AQ"/>
+                        <item value="AR"/>
+                        <item value="AS"/>
+                        <item value="AT"/>
+                        <item value="AU"/>
+                        <item value="AV"/>
+                        <item value="AW"/>
+                      </model>
+                    </properties>
+                  </component>
+                  <component id="7b962" class="javax.swing.JComboBox" binding="comboBox4" default-binding="true">
+                    <constraints>
+                      <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="A"/>
+                        <item value="B"/>
+                        <item value="C"/>
+                        <item value="B"/>
+                        <item value="E"/>
+                        <item value="F"/>
+                        <item value="G"/>
+                        <item value="H"/>
+                        <item value="I"/>
+                        <item value="J"/>
+                        <item value="K"/>
+                        <item value="L"/>
+                        <item value="M"/>
+                        <item value="N"/>
+                        <item value="O"/>
+                        <item value="P"/>
+                        <item value="Q"/>
+                        <item value="R"/>
+                        <item value="S"/>
+                        <item value="T"/>
+                        <item value="U"/>
+                        <item value="V"/>
+                        <item value="W"/>
+                        <item value="X"/>
+                        <item value="Y"/>
+                        <item value="Z"/>
+                        <item value="AA"/>
+                        <item value="AB"/>
+                        <item value="AC"/>
+                        <item value="AD"/>
+                        <item value="AE"/>
+                        <item value="AF"/>
+                        <item value="AG"/>
+                        <item value="AH"/>
+                        <item value="AI"/>
+                        <item value="AJ"/>
+                        <item value="AK"/>
+                        <item value="AL"/>
+                        <item value="AM"/>
+                        <item value="AN"/>
+                        <item value="AO"/>
+                        <item value="AP"/>
+                        <item value="AQ"/>
+                        <item value="AR"/>
+                        <item value="AS"/>
+                        <item value="AT"/>
+                        <item value="AU"/>
+                        <item value="AV"/>
+                        <item value="AW"/>
+                      </model>
+                    </properties>
+                  </component>
+                  <component id="3fa13" class="javax.swing.JLabel" binding="columnNaam">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Kolom naam: "/>
+                    </properties>
+                  </component>
+                  <component id="5b441" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Kolom voornaam: "/>
+                    </properties>
+                  </component>
+                  <component id="3f3b7" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Kolom geboortedatum: "/>
+                    </properties>
+                  </component>
+                  <component id="c3050" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Kolom geslacht: "/>
+                    </properties>
+                  </component>
+                </children>
               </grid>
-            </constraints>
-            <properties>
-              <toolTipText value="Bv. : C:\Users\Gebruiker\Documents\Moniaanduiding\Vakanties.xlsx"/>
-            </properties>
-          </component>
-          <component id="b808a" class="javax.swing.JLabel" binding="padVrijwilligers">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Bestandspad vrijwilligers: "/>
-            </properties>
-          </component>
-          <component id="b271c" class="javax.swing.JTextField" binding="invoerBestandspadVrijwilligers">
-            <constraints>
-              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="-1"/>
+              <vspacer id="5f2b0">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                    <preferred-size width="301" height="14"/>
+                  </grid>
+                </constraints>
+              </vspacer>
+              <grid id="a351" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="301" height="104"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="4e25f" class="javax.swing.JLabel" binding="labelInvoerVrijwilligers">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Bestandspad vrijwilligers: "/>
+                    </properties>
+                  </component>
+                  <component id="63172" class="javax.swing.JTextField" binding="invoerBestandspadVrijwilligers">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="45e1c" class="javax.swing.JLabel" binding="labelInvoerVakanties">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Bestandspad vakanties: "/>
+                    </properties>
+                  </component>
+                  <component id="d82c6" class="javax.swing.JTextField" binding="invoerBestandspadVakanties">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="e883d" class="javax.swing.JTextField" binding="invoerBestandspadResultaat">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="70ac0" class="javax.swing.JLabel" binding="labelInvoerResultaat">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Bestandspad resultaat: "/>
+                    </properties>
+                  </component>
+                </children>
               </grid>
-            </constraints>
-            <properties>
-              <toolTipText value="Bv. : C:\Users\Gebruiker\Documents\Moniaanduiding\Monitoren.xlsx"/>
-            </properties>
-          </component>
-          <component id="70d60" class="javax.swing.JButton" binding="startProcedure">
-            <constraints>
-              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <text value="Start de procedure"/>
-              <toolTipText value="Display"/>
-            </properties>
-          </component>
+              <grid id="d3454" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="15dcf" class="javax.swing.JButton" binding="startProcedure">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Start de procedure"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
         </children>
-      </grid>
+      </tabbedpane>
     </children>
   </grid>
 </form>

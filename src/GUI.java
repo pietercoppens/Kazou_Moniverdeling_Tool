@@ -2,47 +2,45 @@ import javax.swing.*;
 import java.awt.event.*;
 
 
-public class GUI extends JFrame{
+public class GUI extends JFrame {
     public static String bestandspadMonitoren = null;
     public static String bestandspadVakanties = null;
-    private JTextField invoerBestandspadVrijwilligers;
     private JPanel mainPanel;
-    private JTextField invoerBestandspadVakanties;
-    private JLabel padVrijwilligers;
-    private JLabel padVakanties;
     private JButton startProcedure;
-    private JPanel invoer;
+    private JTextField invoerBestandspadVakanties;
+    private JTextField invoerBestandspadVrijwilligers;
+    private JTextField invoerBestandspadResultaat;
+    private JLabel labelInvoerVrijwilligers;
+    private JLabel labelInvoerVakanties;
+    private JLabel labelInvoerResultaat;
+    private JComboBox comboBox1;
+    private JComboBox comboBox2;
+    private JComboBox comboBox3;
+    private JComboBox comboBox4;
+    private JLabel columnNaam;
+    private JTabbedPane Menu;
+    private JPanel Home;
+    private JPanel Input;
+    private JLabel Welkom;
+    private JList list1;
+    private JPanel Protocol;
 
-
-    public GUI(){
+    public GUI() {
         super("Kazou W&D - Moniaanduidingstool");
-
-
         startProcedure.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
-                System.out.println("test");
                 bestandspadMonitoren = invoerBestandspadVrijwilligers.getText();
                 bestandspadVakanties = invoerBestandspadVakanties.getText();
-                System.out.println(bestandspadMonitoren);
-                System.out.println(bestandspadVakanties);
-                Excel.readCell(1, 0);
+                Protocollen.monitoren();
             }
         });
-
 
         setContentPane(mainPanel);
-
-        setBounds(250, 250,300, 300);
+        setLocationRelativeTo(null);
+        setSize(600, 300);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-
-        invoerBestandspadVakanties.addHierarchyListener(new HierarchyListener() {
-            @Override
-            public void hierarchyChanged(HierarchyEvent e) {
-
-            }
-        });
     }
 
     public static void setLookAndFeel() {
@@ -60,12 +58,14 @@ public class GUI extends JFrame{
             case "Vakanties":
                 pad = bestandspadVakanties;
                 break;
-            default: pad = "Default return"; break;
+            default:
+                pad = "Default return";
+                break;
         }
         return pad;
     }
 
 
+    }
 
-}
 

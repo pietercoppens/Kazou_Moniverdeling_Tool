@@ -11,7 +11,6 @@ public class Excel {
     public int Column_name = 2;
     public int Column_firstName = 3;
     public int Column_vrijwilligersNummer = 4;
-    //String bestandspadMonitoren = "C:\\Users\\Gebruiker\\Documents\\Kazou\\Demo.xlsx" ;
     String bestandspad = GUI.bestandspad("Monitoren");
 
 
@@ -38,9 +37,11 @@ public class Excel {
         try { FileInputStream fis=new FileInputStream(bestandspad);
             wb=new XSSFWorkbook(fis);}
         catch(FileNotFoundException e)
-        {e.printStackTrace();}
+        {e.printStackTrace();
+            new popUp("Error");}
         catch(IOException e1)
-        {e1.printStackTrace();}
+        {e1.printStackTrace();
+            new popUp("Error");}
 
         Sheet sheet=wb.getSheetAt(0);   //getting the XSSFSheet object at given index
         Row row=sheet.getRow(vRow); //returns the logical row
@@ -56,9 +57,11 @@ public class Excel {
         try { FileInputStream fis=new FileInputStream(bestandspad);
             wb=new XSSFWorkbook(fis);}
         catch(FileNotFoundException e)
-        {e.printStackTrace();}
+        {e.printStackTrace();
+            new popUp("Error");}
         catch(IOException e1)
-        {e1.printStackTrace();}
+        {e1.printStackTrace();
+            new popUp("Error");}
 
         Sheet sheet=wb.getSheetAt(0);   //getting the XSSFSheet object at given index
         Row row=sheet.getRow(vRow); //returns the logical row
@@ -76,9 +79,11 @@ public class Excel {
         try { FileInputStream fis=new FileInputStream(bestandspad);
             wb=new XSSFWorkbook(fis);}
         catch(FileNotFoundException e)
-        {e.printStackTrace();}
+        {e.printStackTrace();
+            new popUp("Error");}
         catch(IOException e1)
-        {e1.printStackTrace();}
+        {e1.printStackTrace();
+            new popUp("Error");}
 
         Sheet sheet=wb.getSheetAt(0);   //getting the XSSFSheet object at given index
         Row row=sheet.getRow(vRow); //returns the logical row
